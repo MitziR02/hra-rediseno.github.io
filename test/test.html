@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión con PIN</title>
+    
+    <link rel="stylesheet" href="./test.css">
+</head>
+
+<body>
+
+    <main>
+        <section class="box pin__box">
+
+            <h3 class="title title__pin">Ingresa tu PIN</h3>
+
+            <div class="output__pin">
+                <ul class="output__list" id="pinOutput">
+                    <li class="output__item"></li>
+                    <li class="output__item"></li>
+                    <li class="output__item"></li>
+                    <li class="output__item"></li>
+                </ul>
+            </div>
+            
+            <div class="keypad" id="keypad">
+                <ul class="keypad__list">
+                    <li class="keypad__item" onclick="addPin(1)">1</li>
+                    <li class="keypad__item" onclick="addPin(2)">2</li>
+                    <li class="keypad__item" onclick="addPin(3)">3</li>
+                    <li class="keypad__item" onclick="addPin(4)">4</li>
+                    <li class="keypad__item" onclick="addPin(5)">5</li>
+                    <li class="keypad__item" onclick="addPin(6)">6</li>
+                    <li class="keypad__item" onclick="addPin(7)">7</li>
+                    <li class="keypad__item" onclick="addPin(8)">8</li>
+                    <li class="keypad__item" onclick="addPin(9)">9</li>
+                    <li class="keypad__item" onclick="clearLast()">⬅</li>
+                    <li class="keypad__item" onclick="clearAll()">C</li>
+                    <li class="keypad__item" onclick="addPin(0)">0</li>
+                    <li class="keypad__item" onclick="submitPin('ENTRAR')">ENTRAR</li>
+                </ul>
+            </div>
+
+            <button class="btn" onclick="submitPin('ENTRAR')">ENTRAR</button>
+
+          </section>
+    </main>
+
+    <script src="./test.js"></script>
+
+</body>
+</html>
