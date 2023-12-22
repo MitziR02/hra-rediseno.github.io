@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="a" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 200">
+  <defs>
+    <style>
+      .f, .g, .h {
+        fill: none;
+      }
+
+      .f, .h {
+        stroke: #efefef;
+        stroke-width: 7px;
+      }
+
+      .g, .i {
+        stroke-width: 0px;
+      }
+
+      .h {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .i {
+        fill: url(#b);
+      }
+    </style>
+    <linearGradient id="b" x1="-4033.42" y1="267.5" x2="-4033.42" y2="257.41" gradientTransform="translate(76735 5085) scale(19 -19)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fcc329"/>
+      <stop offset="1" stop-color="#fcd56c"/>
+    </linearGradient>
+  </defs>
+  <path id="c" data-name="Rectangle 715" class="i" d="M100,2.51h0c52.96,0,95.89,42.93,95.89,95.89h0c0,52.96-42.93,95.89-95.89,95.89h0c-52.96,0-95.89-42.93-95.89-95.89h0C4.11,45.45,47.04,2.51,100,2.51Z"/>
+  <g id="d" data-name="Rectangle 716">
+    <path class="g" d="M100,32.8h0c36.24,0,65.61,29.37,65.61,65.61h0c0,36.24-29.37,65.61-65.61,65.61h0c-36.24,0-65.61-29.37-65.61-65.61h0c0-36.24,29.37-65.61,65.61-65.61Z"/>
+    <path class="f" d="M100,37.84h0c33.45,0,60.56,27.12,60.56,60.56h0c0,33.45-27.12,60.56-60.56,60.56h0c-33.45,0-60.56-27.12-60.56-60.56h0c0-33.45,27.12-60.56,60.56-60.56Z"/>
+  </g>
+  <path id="e" data-name="Path 89" class="h" d="M100,64.68v37.76h30.28"/>
+</svg>

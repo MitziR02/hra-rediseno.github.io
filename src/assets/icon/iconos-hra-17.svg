@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="a" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 200">
+  <defs>
+    <style>
+      .e {
+        fill: #fff;
+        font-family: Muli-Bold, Muli;
+        font-size: 144.81px;
+        font-weight: 700;
+      }
+
+      .e, .f {
+        isolation: isolate;
+      }
+
+      .g {
+        fill: url(#b);
+        stroke-width: 0px;
+      }
+    </style>
+    <linearGradient id="b" x1="-3826.07" y1="254.81" x2="-3826.07" y2="245.15" gradientTransform="translate(72794 4848) scale(19 -19)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d82135"/>
+      <stop offset="1" stop-color="#e6485a"/>
+    </linearGradient>
+  </defs>
+  <path id="c" data-name="Rectangle 665" class="g" d="M98.71,6.69h0c50.65,0,91.71,41.06,91.71,91.71h0c0,50.65-41.06,91.71-91.71,91.71h0c-50.65,0-91.71-41.06-91.71-91.71h0C7,47.75,48.06,6.69,98.71,6.69Z"/>
+  <g id="d" data-name=" " class="f">
+    <text class="e" transform="translate(75.7 151.5)"><tspan x="0" y="0">!</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="a" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <defs>
+    <style>
+      .g {
+        fill: #41d320;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="b" data-name="Group 111">
+    <rect id="c" data-name="Rectangle 732" class="g" x="38.42" y="38.25" width="224" height="224" rx="11.79" ry="11.79"/>
+    <rect id="d" data-name="Rectangle 734" class="g" x="3.05" y="89.33" width="31.44" height="121.82" rx="11.79" ry="11.79"/>
+    <rect id="e" data-name="Rectangle 735" class="g" x="89.51" y="2.88" width="121.82" height="31.44" rx="11.79" ry="11.79"/>
+    <rect id="f" data-name="Rectangle 736" class="g" x="89.51" y="266.18" width="121.82" height="31.44" rx="11.79" ry="11.79"/>
+  </g>
+</svg>

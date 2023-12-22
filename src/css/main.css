@@ -46,14 +46,18 @@ table {
 
 /* --------------- Main config and Variable ---------------*/
 
-@import url(https://fonts.googleapis.com/css2?family=Lato&display=swap);
+@font-face {
+	font-family: 'font_hra';
+	src: url('../assets/font/Muli-Bold.ttf') format('truetype');
+	/* Puedes agregar formatos adicionales si lo deseas, como woff o woff2 */
+  }  
 
 :root{
     --black:#303232;
     --red: #B70114;
     --pink: #D9606D;
 
-    --font: 'Lato', sans-serif;
+    --font: 'font_hra', sans-serif;
 }
 
 body{

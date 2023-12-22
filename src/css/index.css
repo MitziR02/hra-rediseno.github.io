@@ -29,6 +29,10 @@ body, .box {
 
 body{
     height: 100vh;
+    background-image: url(../assets/img/fondo.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .logo{
@@ -68,13 +72,13 @@ body{
 }
 
 .keypad__item{
-    border: 1px solid #818A91;  
+    border: 2px solid #b7bdc2;  
     border-radius: 50%;
 
     height: 4.7rem;
     width: 4.7rem;
 
-    margin: .07rem;
+    margin: .08rem;
     margin-bottom: .5rem;
 }
 
@@ -88,6 +92,8 @@ body{
     margin: 1.3rem 0 1.5rem;
 
     color: white;
+    font-family: var(--font);
+    font-size: 1.1rem;
 }
 
 .btn:hover, .keypad__item:hover{
