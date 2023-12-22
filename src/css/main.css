@@ -61,6 +61,9 @@ table {
 }
 
 body{
+	height: 100%;
+    width: 100%;
+	
     font-family: var(--font);
     color: var(--black);
 }
