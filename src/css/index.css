@@ -1,61 +1,50 @@
-body, .box, .output__pin,.container, .output__item, .keypad, .keypad__item{
-    display: flex;
-    font-size: 1.7rem;
-}
-
-body, .box, .output__item, .output__pin, .keypad, .keypad__item{
-    align-items: center;
-    justify-content: center;
-}
-
-body, .box {
-    flex-direction: column;
-}
-
-.output__pin, .keypad{
-    width: 100%;
-}
-
-.container{
-    width: 68%;
-}
-
-.output__list, .keypad__list{
-    justify-content: space-evenly;
-}
-
 body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
     background-image: url(../assets/img/fondo.webp);
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
+
+    font-size: 1.7rem;
 }
 
 .logo{
-    width: 26rem;
-    height: 8rem;
-    margin: 0rem 0 2.6rem;
+    width: 56vh ;
 }
 
 .box{
-    width: 29.2rem;
-    height: 40rem;
+    width: 57.6vh;
+    height: 79.1vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 
     background: #EFEFEF;
     box-shadow: 10px 10px 15px #00000029;
     border-radius: 20px;
 }
 
-.title{
-    padding: 2rem 0 2rem;
-}
-
 .output__pin{
-    margin-bottom: 2rem;    
+
+    width: 67%;
 }
 
+.output__list{
+    display: flex;
+    justify-content: space-evenly;
+}
 
 .output__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     border: 1px solid #818A91;
     border-radius: 10px;
 
@@ -63,19 +52,30 @@ body{
     height: 4.1rem;
 }
 
+.keypad{
+    display: flex;
+    justify-content: center;
+}
+
 .keypad__list{
+    display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    width: 67%;
 }
 
 .keypad__item{
     border: 2px solid #b7bdc2;  
     border-radius: 50%;
 
-    height: 4.7rem;
-    width: 4.7rem;
+    height: 9vh;
+    width: 9vh;
 
-    margin: .08rem;
-    margin-bottom: .5rem;
+    margin: 0 .85rem .5rem  ;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn{
@@ -85,7 +85,6 @@ body{
 
     width: 18.3rem;
     height: 3.5rem;
-    margin: 1.3rem 0 1.5rem;
 
     color: white;
     font-family: var(--font);
