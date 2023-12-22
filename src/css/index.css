@@ -26,7 +26,7 @@ body, .box {
 
 body{
     background-image: url(../assets/img/fondo.webp);
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -34,7 +34,7 @@ body{
 .logo{
     width: 26rem;
     height: 8rem;
-    margin: 2.6rem 0 2.6rem;
+    margin: 0rem 0 2.6rem;
 }
 
 .box{
@@ -102,6 +102,9 @@ body{
 
 /*----------- Responsive -----------*/
 
-/*@media screen and (max-width: 1250px){
-
+/*@media screen and (max-width: 1200px){
+    .box{
+        width: 27.2rem;
+        height: 36rem;
+    }
 }*/
