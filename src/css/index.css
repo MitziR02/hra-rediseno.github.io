@@ -99,12 +99,3 @@ body{
 .keypad__item:hover{
     background-color: #b7bdc2;
 }
-
-/*----------- Responsive -----------*/
-
-/*@media screen and (max-width: 1200px){
-    .box{
-        width: 27.2rem;
-        height: 36rem;
-    }
-}*/

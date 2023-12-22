@@ -1,0 +1,39 @@
+@media screen and (max-width: 1200px){
+    .logo{
+        width: 25.4rem;
+        height: 5.5rem;
+        margin: 0rem 0 1.5rem;
+    }
+
+    .box{
+        width: 27.2rem;
+        height: 36rem;
+    }
+
+    .title{
+        padding: 1.5rem 0 1.5rem;
+    }
+
+    .output__pin{
+        margin-bottom: 1.3rem;    
+    }
+
+    .output__item{
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .keypad__item{
+        height: 4.1rem;
+        width: 4.1rem;
+    
+        margin: .2rem;
+        margin-bottom: .2rem;
+    }
+
+    .btn{
+        width: 16.47rem;
+        height: 3.5rem;
+        margin: 1.3rem 0 1.5rem;
+    }
+}
