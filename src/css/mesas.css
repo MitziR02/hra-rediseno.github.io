@@ -6,6 +6,8 @@ body{
     align-items: center;
 }
 
+/*------------ Header ------------*/
+
 header{
     display: flex;
     justify-content: space-between;
@@ -13,12 +15,12 @@ header{
 }
 
 .logo{
-    width: 21.9vh;
+    width: 17.2vh;
 }
 
 .log-out__container{
     display: flex;
-    width: 16%;
+    width: 20%;
     justify-content: space-between;
     align-items: center;
 }
@@ -36,10 +38,14 @@ header{
     width: 4.4vh;
 }
 
+/*------------ main ------------*/
+
 main{
     display: flex;
-    width: 80%;
+    width: 88%;
 }
+
+/*------------ Nav ------------*/
 
 .menu{
     background-color: var(--yellow);
@@ -48,3 +54,42 @@ main{
     border-radius: 20px;
 }
 
+.font-tittle{
+    font-size: 1.5rem;
+    margin: 1rem 2rem;
+}
+
+.btns_container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn-principal-content{
+    display: none;
+}
+
+.btn-principal{
+    width: 33%;
+    /*width: 47vh;*/
+    height: 6.5vh;
+
+    background: none;
+    border: 1px solid #303232;
+    border-radius: 35px;
+
+    font-family: var(--font);
+    font-size: 1.5rem;
+}
+
+.btns_secundary-list{
+    height: 6.5vh;
+    min-width: 15.7vh;
+    padding: 0 1rem 0;
+
+    background: transparent linear-gradient(180deg, #EFEFEF 0%, #D3D2D2 100%) 0% 0% no-repeat padding-box;
+    border-radius: 35px;
+    border: none;
+
+    font-family: var(--font);
+    font-size: 1rem;
+}
