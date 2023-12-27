@@ -107,7 +107,6 @@ main{
     background-color: #EFEFEF;
 
     overflow-y: auto;
-    overflow: hidden;
 }
 
 .table-list{
