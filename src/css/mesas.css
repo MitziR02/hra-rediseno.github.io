@@ -100,7 +100,7 @@ main{
 /*------------ Table section ------------*/
 
 .table-section{
-    height: 30em;
+    height: 79%;
     background: #EFEFEF 0% 0% no-repeat padding-box;
     border-radius: 20px;
 
@@ -114,6 +114,13 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.table-list{
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .table-list__item{

@@ -14,6 +14,5 @@ document.addEventListener("DOMContentLoaded", function () {
         mesaCounter++;
     }
 
-    // Agregar un event listener al botón "Agregar mesa"
     addTableButton.addEventListener("click", addMesa);
 });
