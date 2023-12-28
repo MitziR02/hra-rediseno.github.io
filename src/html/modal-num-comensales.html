@@ -1,35 +1,24 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HRA-PIN</title>
+    <title>Document</title>
 
-    <link rel="stylesheet" href="./src/css/main.css">
-    <link rel="stylesheet" href="./src/css/index.css">
-    <link rel="stylesheet" href="./src/css/keypad.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/css-modales/modal-comensales.css">
+    <link rel="stylesheet" href="../css/keypad.css">
 
 </head>
-
 <body>
-    <header>
-        <img class="logo" src="./src/assets/img/logo-negro.webp" alt="logo_hra">
-    </header>
-
     <main>
-        <section class="box pin__box">
+        <section class="openTable__box">
 
-            <h3 class="title title__pin">INGRESA TU PIN</h3>
+            <h3 class="title__box">ABRIR MESA</h3>
 
-            <div class="output__pin">
-                <ul class="container output__list">
-                    <li class="output__item">0</li>
-                    <li class="output__item">0</li>
-                    <li class="output__item">0</li>
-                    <li class="output__item">0</li>
-                </ul>
-            </div>
+            <h4 class="subtitle__box">NÚMERO DE COMENSALES</h4>
+
+            <p class="input__box"></p>
             
             <div class="keypad">
                 <ul class="container keypad__list">
@@ -48,11 +37,9 @@
                 </ul>
             </div>
 
-            <button class="btn">ENTRAR</button>
+            <button class="btn">CONFIRMAR</button>
         
           </section>
     </main>
-
-    <script src="./src/js/pin.js"></script>
 </body>
 </html>

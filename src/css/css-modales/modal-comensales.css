@@ -1,0 +1,36 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.openTable__box{
+    background: #EFEFEF 0% 0% no-repeat padding-box;
+    box-shadow: 10px 10px 15px #00000029;
+    border-radius: 20px;
+
+    width: 45.7vh;
+    height: 62.5vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.title__box{
+    font-size: 1.2rem;
+}
+
+.subtitle__box{
+    font-size: .8rem;
+}
+
+.input__box{
+    border: 1px solid #818A91;
+    border-radius: 35px;
+
+    width: 80%;
+    height: 8%;
+}
+
