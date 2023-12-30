@@ -73,6 +73,8 @@ document.addEventListener("DOMContentLoaded", function () {
     function hideModal() {
         console.log("btn oprimido");
         modalComensales.style.display = "none";
+
+        window.location.href = 'mesa-abierta.html';
     }
 
     // llamar mesas almacenadas

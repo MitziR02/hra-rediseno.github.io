@@ -1,0 +1,133 @@
+body{
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.nav-tableOpened{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.back-btn{
+    background: var(--red);
+    border-radius: 20px;
+
+    width: 7.68%;
+    height: 6.7rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.icon-btn{
+    width: 3rem;
+}
+
+.btns-tittle{
+    color: #EFEFEF;
+    font-size: .6rem;
+    text-align: center;
+
+}
+
+.tittle-table{
+    background: var(--yellow);
+    border-radius: 20px;
+
+    width: 52.56%;
+    height: 6.7rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.comanda-text{
+    color: #EFEFEF;
+    font-size: 1rem;
+    margin: 0 1rem 1rem;
+}
+
+.comanda-tittle{
+    font-size: 1.6rem;
+    margin-left: 1rem;
+}
+
+.folio-container{
+    background: var(--red);
+    width: 20.83%;
+    border-radius: 20px;
+    color: #EFEFEF;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#folioTicket{
+    font-size: 1rem;
+    margin: 0 1rem 1rem;
+}
+
+.textFolioTicket{
+    font-size: .8rem;
+    margin-left: 1rem;
+}
+
+.send-btn{
+    background: #41d320;
+    border-radius: 20px;
+
+    width: 7.68%;
+    height: 6.7rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/*----------------------*/
+
+.mainFood{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.principal-btns{
+    background: #EFEFEF;
+    border-radius: 20px;
+
+    width: 7.68%;
+    height: 27.9rem;
+}
+
+.sideBtn-icon{
+    width: 1.4rem;
+}
+
+.food{
+    background-color: #EFEFEF;
+    border-radius: 20px;
+
+    width: 52.56%;
+}
+
+.ticket{
+    background-color: #EFEFEF;
+
+    width: 30.34%
+}

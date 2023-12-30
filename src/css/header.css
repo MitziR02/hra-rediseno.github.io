@@ -1,0 +1,31 @@
+/*------------ Header ------------*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.logo{
+    width: 17.2vh;
+}
+
+.log-out__container{
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.font{
+    font-size: 2.2vh;
+}
+
+.font-color{
+    color: white;
+    font-family: var(--font_semi);
+}
+
+.icon{
+    width: 4.4vh;
+}
