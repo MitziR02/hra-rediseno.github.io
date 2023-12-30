@@ -113,6 +113,23 @@ main{
 
     width: 7.68%;
     height: 27.9rem;
+
+    display:  flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.side-btn-container{
+    margin-top: 1rem;
+}
+
+.side-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: .6rem;
+    margin-bottom: 1.3rem;
 }
 
 .sideBtn-icon{
@@ -126,8 +143,85 @@ main{
     width: 52.56%;
 }
 
-.ticket{
-    background-color: #EFEFEF;
+.food-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 
-    width: 30.34%
+    margin-top: 1rem;
+}
+
+.search{
+    width: 26.8%;
+    height: 1.5rem;
+    background: white;
+    border: 1px solid #30323233;
+    border-radius: 18px;
+}
+
+.food-btns{
+    padding: .35rem;
+    background: #30323233;
+    border: none;
+    border-radius: 18px;
+    font-size: .7rem;
+    margin-right: .7rem;
+}
+
+.hrPrinciapl{
+    width: 94%;
+    color: #30323233;
+    margin: 1rem 1rem 1rem;
+}
+
+.food-menu{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: .5rem;
+}
+
+.food-menu-item{
+    width: 7.1rem;
+    height: 7.1rem;
+
+    border-radius: 16px;
+
+    background-color: #30323233;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 .5rem 1rem;
+}
+
+#food-entradas{
+    background-image: url(../assets/img/ENTRADAS.webp);
+    background-size: cover;
+    color: #EFEFEF;
+}
+
+.ticket{
+    background-image: url(../assets/img/ticket.webp);
+    background-size: cover;
+
+    width: 30.34%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.ticket-header{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+    color: var(--red);
+}
+
+.hr-ticket{
+    width: 95%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: var(--red);
 }
