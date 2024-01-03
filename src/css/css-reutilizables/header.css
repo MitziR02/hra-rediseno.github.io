@@ -10,7 +10,7 @@ header{
     width: 17.2vh;
 }
 
-.log-out__container{
+.log-out-container{
     display: flex;
     width: 20%;
     justify-content: space-between;

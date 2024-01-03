@@ -6,103 +6,102 @@
     <title>Mesa abierta</title>
 
     <link rel="stylesheet" href="./src/css/main.css">
-    <link rel="stylesheet" href="./src/css/header.css">
+    <link rel="stylesheet" href="./src/css/css-reutilizables/header.css">
     <link rel="stylesheet" href="./src/css/masaAbierta.css">
 </head>
-<body>
+<body class="flex column">
 
     <header>
-        <img class="logo" src="./src/assets/img/loho-hra soft-blanco.webp" alt="logo_hra">
+        <img class="logo" src="./src/assets/img/loho-hra soft-blanco.webp" alt="logo-hra">
 
-        <div class="log-out__container">
+        <div class="log-out-container">
             <h3 class="font font-color">Cerrar sesión</h3>
             <img class="icon" src="./src/assets/icon/iconos-hra-08.svg" alt="salir">
         </div>
     </header>
 
-    <main>
-        <nav class="nav-tableOpened">
-            <a class="back-btn" href="./mesas.html"><div class="back-btn">
-                <img class="icon-btn" src="./src/assets/icon/iconos-hra-06.svg" alt="back-icon">
-                <h2 class="btns-tittle">MESAS</h2>
-            </div></a>
-
-            <div class="tittle-table">
-                <h3 class="comanda-text">COMANDA</h3>
-                <h2 class="comanda-tittle">MESA 2</h2>
+    <main class="flex column">
+        <nav class="table-opened-nav flex">
+            <div class="nav-btn flex column">
+                <img src="./src/assets/icon/iconos-hra-06.svg" alt="back-icon" class="icon-btn">
+                <h2 class="btn-title color-white">MESAS</h2>
+            </div>
+    
+            <div class="table-title-container flex column">
+                <h3 class="comanda-text color-white">COMANDA</h3>
+                <h2 class="comanda-text ">MESA 2</h2>
             </div>
 
-            <div class="folio-container">
-                <h2 id="folioTicket">FOLIO TICKET:000000</h2>
-                <h3 class="textFolioTicket" id="timeOpened">Hora:13:15</h3>
-                <h3 class="textFolioTicket" id="waiter">Mesero: Juan Perez</h3>
-                <h3 class="textFolioTicket" id="tableNumber">Mesa: 2</h3>
-                <h3 class="textFolioTicket" id="clientNumbers">Comensales: 2</h3>
-            </div>
-
-            <div class="send-btn">
-                <img class="icon-btn" src="./src/assets/icon/iconos-hra-07.svg" alt="send-icon">
-                <h2 class="btns-tittle">ENVIAR COMANDA</h2>
+            <ul class="folio-container color-white flex column">
+                <li class="info-ticket" id="ticket-folio">Text Sample</li>
+                <li class="info-ticket" id="ticket-time">Text Sample</li>
+                <li class="info-ticket" id="ticket-waiter">Text Sample</li>
+                <li class="info-ticket" id="ticket-table">Text Sample</li>
+                <li class="info-ticket" id="ticket-clients">Text Sample</li>
+            </ul>
+    
+            <div class="nav-btn nav-btn-green flex column">
+                <img src="./src/assets/icon/iconos-hra-07.svg" alt="send-icon" class="icon-btn">
+                <h2 class="btn-title">ENVIAR COMANDA</h2>
             </div>
         </nav>
-
-        <section class="mainFood">
-            <div class="principal-btns">
-                <ul class="side-btn-container">
-                    <li class="side-btn">
-                        <img src="./src/assets/icon/iconos-hra-10.svg" alt="dividir-icon" class="sideBtn-icon">
-                        <h3 class="text-SideBtn">Dividir cuenta</h3>
+    
+        <section class="main-food flex">
+            <div class="main-btns-container flex column">
+                <ul class="side-btn-list">
+                    <li class="side-btn-item">
+                        <img src="./src/assets/icon/iconos-hra-10.svg" alt="dividir-icon" class="side-btn-icon">
+                        <h3 class="text-side-btn">Dividir cuenta</h3>
                     </li>
-                    <li class="side-btn">
-                        <img src="./src/assets/icon/iconos-hra-11.svg" alt="actualizar-icon" class="sideBtn-icon">
-                        <h3 class="text-SideBtn">Actualizar comensales</h3>
+                    <li class="side-btn-item">
+                        <img src="./src/assets/icon/iconos-hra-11.svg" alt="actualizar-icon" class="side-btn-icon">
+                        <h3 class="text-side-btn">Actualizar comensales</h3>
                     </li>
-                    <li class="side-btn">
-                        <img src="./src/assets/icon/iconos-hra-12.svg" alt="descuento-icon" class="sideBtn-icon">
-                        <h3 class="text-SideBtn">Descuento</h3>
+                    <li class="side-btn-item">
+                        <img src="./src/assets/icon/iconos-hra-12.svg" alt="descuento-icon" class="side-btn-icon">
+                        <h3 class="text-side-btn">Descuento</h3>
                     </li>
-                    <li class="side-btn">
-                        <img src="./src/assets/icon/iconos-hra-13.svg" alt="ceunta-icon" class="sideBtn-icon">
-                        <h3 class="text-SideBtn">Cuenta resumida</h3>
+                    <li class="side-btn-item">
+                        <img src="./src/assets/icon/iconos-hra-13.svg" alt="cuenta-icon" class="side-btn-icon">
+                        <h3 class="text-side-btn">Cuenta resumida</h3>
                     </li>
                 </ul>
-                <div class="side-btn">
-                    <img src="./src/assets/icon/iconos-hra-14.svg" alt="imprimir-icon" class="sideBtn-icon">
-                        <h3 class="text-SideBtn">Imprimir</h3>
+                <div class="side-btn-item">
+                    <img src="./src/assets/icon/iconos-hra-14.svg" alt="imprimir-icon" class="side-btn-icon">
+                    <h3 class="text-side-btn">Imprimir</h3>
                 </div>
             </div>
-
-            <div class="food">
-                <div class="food-header">
-                    <h1 class="foodFamily">FAMILIAS</h1>
-                    <div class="btns-header-food">
-                        <button class="food-btns">TODOS</button>
-                        <button class="food-btns">BEBIDAS</button>
-                        <button class="food-btns">ALIMENTOS</button>
+    
+            <div class="food-container">
+                <div class="food-header flex">
+                    <h1 class="food-text">FAMILIAS</h1>
+                    <div class="food-header-btns">
+                        <button class="food-btn">TODOS</button>
+                        <button class="food-btn">BEBIDAS</button>
+                        <button class="food-btn">ALIMENTOS</button>
                     </div>
                     <div class="search"></div>
                 </div>
-
-                <hr class="hrPrinciapl">
-
-                <ul class="food-menu">
-                    <li class="food-menu-item" id="food-entradas">Entradas</li>
-                    <li class="food-menu-item" id="food-otros">OTROS</li>
+    
+                <hr class="hr-principal">
+    
+                <ul class="food-menu flex">
+                    <li class="food-menu-item flex" id="food-entradas">Entradas</li>
+                    <li class="food-menu-item flex" id="food-otros">OTROS</li>
                 </ul>
             </div>
-
-            <div class="ticket">
-                <div class="ticket-header">
-                    <h2 class="ticket-tittle-header">Cantidad</h2>
-                    <h2 class="ticket-tittle-header">Precio</h2>
-                    <h2 class="ticket-tittle-header">Descuento</h2>
-                    <h2 class="ticket-tittle-header">Total</h2>
+    
+            <div class="ticket flex column">
+                <div class="ticket-header flex">
+                    <h2 class="ticket-title-header">Cantidad</h2>
+                    <h2 class="ticket-title-header">Precio</h2>
+                    <h2 class="ticket-title-header">Descuento</h2>
+                    <h2 class="ticket-title-header">Total</h2>
                 </div>
                 <hr class="hr-ticket">
-
-                
             </div>
         </section>
     </main>
+
 </body>
 </html>

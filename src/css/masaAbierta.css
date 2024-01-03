@@ -1,157 +1,123 @@
-body{
-    background-color: var(--black);
+/* propiedades repetitivas */
+
+.flex{
     display: flex;
+}
+
+.column{
     flex-direction: column;
+}
+
+.color-white{
+    color: var(--white);
+}
+
+/* main*/
+
+body {
+    background-color: var(--black);
     justify-content: space-evenly;
     align-items: center;
 }
 
-main{
+main {
     width: 100%;
     height: 80%;
-    display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
 }
 
-.nav-tableOpened{
-    display: flex;
+/* navegacion principal*/
+
+.table-opened-nav {
     justify-content: space-evenly;
 }
 
-.back-btn{
+.nav-btn {
     background: var(--red);
     border-radius: 20px;
-
     width: 7.68%;
     height: 6.7rem;
-
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
 }
 
-.icon-btn{
+.icon-btn {
     width: 3rem;
 }
 
-.btns-tittle{
-    color: #EFEFEF;
-    font-size: .6rem;
-    text-align: center;
-
-}
-
-.tittle-table{
+.table-title-container{
     background: var(--yellow);
     border-radius: 20px;
-
     width: 52.56%;
     height: 6.7rem;
-
-    display: flex;
-    flex-direction: column;
     justify-content: center;
 }
 
-.comanda-text{
-    color: #EFEFEF;
-    font-size: 1rem;
-    margin: 0 1rem 1rem;
-}
-
-.comanda-tittle{
-    font-size: 1.6rem;
+.comanda-text {
     margin-left: 1rem;
 }
 
-.folio-container{
+.folio-container {
     background: var(--red);
     width: 20.83%;
     border-radius: 20px;
-    color: #EFEFEF;
-
-    display: flex;
-    flex-direction: column;
     justify-content: center;
 }
 
-#folioTicket{
-    font-size: 1rem;
-    margin: 0 1rem 1rem;
-}
-
-.textFolioTicket{
-    font-size: .8rem;
-    margin-left: 1rem;
-}
-
-.send-btn{
+.nav-btn-green  {
     background: #41d320;
-    border-radius: 20px;
-
-    width: 7.68%;
-    height: 6.7rem;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
 }
 
 /*----------------------*/
 
-.mainFood{
-    display: flex;
+.main-food {
     justify-content: space-evenly;
 }
 
-.principal-btns{
-    background: #EFEFEF;
+.main-btns-container {
+    background: var(--white);
     border-radius: 20px;
-
     width: 7.68%;
     height: 27.9rem;
-
-    display:  flex;
-    flex-direction: column;
     justify-content: space-between;
 }
 
-.side-btn-container{
+.side-btn-list {
     margin-top: 1rem;
 }
 
-.side-btn{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.side-btn-item{
     text-align: center;
-    font-size: .6rem;
+    font-size: 0.6rem;
     margin-bottom: 1.3rem;
 }
 
-.sideBtn-icon{
+.side-btn-icon{
     width: 1.4rem;
 }
 
-.food{
+.food-container{
     background-color: #EFEFEF;
     border-radius: 20px;
-
     width: 52.56%;
 }
 
-.food-header{
-    display: flex;
+.food-header {
     align-items: center;
     justify-content: space-evenly;
-
     margin-top: 1rem;
 }
 
-.search{
+.food-btn{
+    padding: 0.35rem;
+    background: #30323233;
+    border: none;
+    border-radius: 18px;
+    font-size: 0.7rem;
+    margin-right: 0.7rem;
+}
+
+.search {
     width: 26.8%;
     height: 1.5rem;
     background: white;
@@ -159,67 +125,46 @@ main{
     border-radius: 18px;
 }
 
-.food-btns{
-    padding: .35rem;
-    background: #30323233;
-    border: none;
-    border-radius: 18px;
-    font-size: .7rem;
-    margin-right: .7rem;
-}
-
-.hrPrinciapl{
+.hrPrincipal {
     width: 94%;
     color: #30323233;
     margin: 1rem 1rem 1rem;
 }
 
-.food-menu{
-    display: flex;
+.food-menu {
     flex-wrap: wrap;
-    margin-left: .5rem;
+    margin-left: 0.5rem;
 }
 
-.food-menu-item{
+.food-menu-item {
     width: 7.1rem;
     height: 7.1rem;
-
     border-radius: 16px;
-
     background-color: #30323233;
-
-    display: flex;
     justify-content: center;
     align-items: center;
-
-    margin: 0 .5rem 1rem;
+    margin: 0 0.5rem 1rem;
 }
 
-#food-entradas{
+#food-entradas {
     background-image: url(../assets/img/ENTRADAS.webp);
     background-size: cover;
-    color: #EFEFEF;
+    color: var(--white);
 }
 
-.ticket{
+.ticket {
     background-image: url(../assets/img/ticket.webp);
     background-size: cover;
-
     width: 30.34%;
-
-    display: flex;
-    flex-direction: column;
 }
 
-
-.ticket-header{
-    display: flex;
+.ticket-header {
     justify-content: space-evenly;
     margin-top: 3rem;
     color: var(--red);
 }
 
-.hr-ticket{
+.hr-ticket {
     width: 95%;
     margin-top: 1rem;
     margin-bottom: 1rem;
