@@ -1,25 +1,20 @@
-body{
+body {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
 
-    background-image: url(../assets/img/fondo.webp);
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-
+    background: url(../assets/img/fondo.webp) center/100% 100% no-repeat;
     font-size: 1.5rem;
 }
 
-.logo{
-    width: 44.5vh ;
+.logo {
+    width: 44.5vh;
 }
 
-.box{
+.pin-input-box {
     width: 45.7vh;
     height: 62.5vh;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,17 +25,16 @@ body{
     border-radius: 20px;
 }
 
-.output__pin{
-
+.output-pin {
     width: 67%;
 }
 
-.output__list{
+.output-list {
     display: flex;
     justify-content: space-evenly;
 }
 
-.output__item{
+.output-item{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,4 +44,8 @@ body{
 
     width: 6.3vh;
     height: 6.3vh;
+}
+
+#pin{
+    display: none;
 }

@@ -8,8 +8,9 @@
 
     <link rel="stylesheet" href="./src/css/main.css">
     <link rel="stylesheet" href="./src/css/index.css">
-    <link rel="stylesheet" href="./src/css/keypad.css">
-
+    <link rel="stylesheet" href="./src/css/css-reutilizables/keypad.css">
+    <link rel="stylesheet" href="./src/css/css-responsive/index-responsive.css">
+    
 </head>
 
 <body>
@@ -18,41 +19,42 @@
     </header>
 
     <main>
-        <section class="box pin__box">
-
-            <h3 class="title title__pin">INGRESA TU PIN</h3>
-
-            <div class="output__pin">
-                <ul class="container output__list">
-                    <li class="output__item">0</li>
-                    <li class="output__item">0</li>
-                    <li class="output__item">0</li>
-                    <li class="output__item">0</li>
+        <form id="pinForm">
+          <section class="pin-input-box">
+            <label for="pin" class="title">INGRESA TU PIN</label>
+            <input type="password" id="pin" name="pin" class="pin" autocomplete="off" />
+            
+            <div class="output-pin">
+                <ul class="output-list container">
+                    <li class="output-item"></li>
+                    <li class="output-item"></li>
+                    <li class="output-item"></li>
+                    <li class="output-item"></li>
                 </ul>
             </div>
             
-            <div class="keypad">
-                <ul class="container keypad__list">
-                    <li class="keypad__item">1</li>
-                    <li class="keypad__item">2</li>
-                    <li class="keypad__item">3</li>
-                    <li class="keypad__item">4</li>
-                    <li class="keypad__item">5</li>
-                    <li class="keypad__item">6</li>
-                    <li class="keypad__item">7</li>
-                    <li class="keypad__item">8</li>
-                    <li class="keypad__item">9</li>
-                    <li class="keypad__item">⬅</li>
-                    <li class="keypad__item">0</li>
-                    <li class="keypad__item">C</li>
-                </ul>
-            </div>
-
-            <button class="btn">ENTRAR</button>
-        
+            <nav class="keypad">
+              <ul class="keypad-items">
+                <li class="keypad-item">1</li>
+                <li class="keypad-item">2</li>
+                <li class="keypad-item">3</li>
+                <li class="keypad-item">4</li>
+                <li class="keypad-item">5</li>
+                <li class="keypad-item">6</li>
+                <li class="keypad-item">7</li>
+                <li class="keypad-item">8</li>
+                <li class="keypad-item">9</li>
+                <li class="keypad-item">⬅</li>
+                <li class="keypad-item">0</li>
+                <li class="keypad-item">C</li>
+              </ul>
+            </nav>
+      
+            <button type="submit" class="btn">ENTRAR</button>
           </section>
-    </main>
-
+        </form>
+      </main>
+      
     <script src="./src/js/pin.js"></script>
 </body>
 </html>

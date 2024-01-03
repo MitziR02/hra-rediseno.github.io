@@ -1,0 +1,60 @@
+.pin-input-box {
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .pin {
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: #ccc;
+    font-size: 20px;
+  }
+  
+  .keypad {
+    width: 300px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .keypad-items li {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .keypad-items li:hover {
+    background-color: #eee;
+  }
+  
+  .keypad-items li.keypad-item-c {
+    background-color: #f00;
+  }
+  
+  .keypad-items li.keypad-item-borrar {
+    background-color: #ccc;
+  }
+  
+  .btn {
+    width: 100px;
+    height: 30px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

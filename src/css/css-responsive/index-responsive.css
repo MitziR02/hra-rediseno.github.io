@@ -1,0 +1,37 @@
+@media screen and (max-width: 460px){
+    .logo{
+        width: 30vh;
+    }
+
+    .pin-input-box {
+        width: 30vh;
+        height: 45vh;
+    }
+
+    .title{
+        font-size: .9em;
+    }
+
+    .output-pin {
+        width: 80%;
+    }
+
+    .output-item{
+        width: 5vh;
+        height: 5vh;
+    }
+
+    .keypad-items{
+        width: 80%;
+    }
+
+    .keypad-item{
+        height: 5vh;
+        width: 5vh;
+    }
+
+    .btn{
+        width: 22vh;
+        height: 4vh;
+    }
+}

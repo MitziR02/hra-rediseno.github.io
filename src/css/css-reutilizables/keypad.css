@@ -3,44 +3,40 @@
     justify-content: center;
 }
 
-.keypad__list{
+.keypad-items{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 67%;
 }
 
-.keypad__item{
-    border: 2px solid #b7bdc2;  
+.keypad-item{
+    border: 2px solid #b7bdc2;
     border-radius: 50%;
-
-    height: 6.8vh;
-    width: 6.8vh;
-
-    margin: 0 .2rem .5rem  ;
-
+    height: 6.9vh;
+    width: 6.9vh;
+    margin: 0 .2rem .5rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .btn{
-    background: transparent linear-gradient(180deg, #D9606D 0%, #B70114 100%) ;
+    background: linear-gradient(180deg, #D9606D 0%, #B70114 100%);
     border: none;
     border-radius: 35px;
-
     width: 29vh;
     height: 5.6vh;
-
     color: white;
     font-family: var(--font);
     font-size: 1.1rem;
 }
 
-.btn:hover, .keypad__item:hover{
+.btn:hover,
+.keypad-item:hover{
     cursor: pointer;
 }
 
-.keypad__item:hover{
+.keypad-item:hover{
     background-color: #b7bdc2;
 }
