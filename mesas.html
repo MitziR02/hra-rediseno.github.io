@@ -6,50 +6,52 @@
     <title>Mesas</title>
 
     <link rel="stylesheet" href="./src/css/main.css">
-    <link rel="stylesheet" href="./src/css/header.css">
+    <link rel="stylesheet" href="./src/css/css-reutilizables/header.css">
     <link rel="stylesheet" href="./src/css/mesas.css">
+    <link rel="stylesheet" href="./src/css/css-responsive/header-responsive.css">
+    <link rel="stylesheet" href="./src/css/css-responsive/mesas-responsive.css">
 </head>
 <body>
     <header>
-        <img class="logo" src="./src/assets/img/loho-hra soft-blanco.webp" alt="logo_hra">
+        <img class="logo" src="./src/assets/img/loho-hra soft-blanco.webp" alt="logo-hra">
 
-        <div class="log-out__container">
+        <div class="log-out-container">
             <h3 class="font font-color">Cerrar sesión</h3>
-            <img class="icon" src="./src/assets/icon/iconos-hra-08.svg" alt="salir">
+            <img class="icon" id="log-out-btn" src="./src/assets/icon/iconos-hra-08.svg" alt="salir">
         </div>
     </header>
 
     <main>
         <nav class="menu">
-            <h1 class="font-tittle font-color">MESAS</h1>
+            <h1 class="font-title font-color">MESAS</h1>
+            <h1 class="font-title" id="username-heading"></h1>
+            
 
-            <div class="btns_container">
-                <button class="btn btn-principal">ÁREA PRINCIPAL ˅</button>
-                <div class="btn-principal-content">
-                    <button class="btn-dropdown">TERRAZA</button>
-                    <button class="btn-dropdown">SALÓN</button>
-                    <button class="btn-dropdown">BARRA</button>
+            <div class="btns-container">
+                <button class="btn btn-principal" id="toggleBtn"><img class="icon-drop" src="./src/assets/icon/RiArrowDownSLine.svg" alt="icon-menu"></button>
+                <ul class="btn-principal-content" id="dropdownMenu">
+                    <li class="btn-dropdown" id="areaPrincipalBtn">ÁREA PRINCIPAL<hr></li>
+                    <li class="btn-dropdown" id="terrazaBtn">TERRAZA<hr></li>
+                    <li class="btn-dropdown" id="salonBtn">SALÓN<hr></li>
+                    <li class="btn-dropdown" id="barraBtn">BARRA</li>
+                </ul>
+
+                <div id="secondary-menu" class="btns-container-secondary">
+                    <button class="btn-secondary-list">JUNTAR MESAS</button>
+                    <button class="btn-secondary-list">CAMBIAR MESA</button>
+                    <button class="btn-secondary-list">CAMBIAR MESERO</button>
                 </div>
 
-                <div class="btns_container-secundary">
-                    <button class="btns_secundary-list">JUNTAR MESAS</button>
-                    <button class="btns_secundary-list">CAMBIAR MESA</button>
-                    <button class="btns_secundary-list">CAMBIAR MESERO</button>
-                </div>
+                <img class="burguer-menu" id="burguer-menu" src="./src/assets/icon/MaterialSymbolsMenu.svg" alt="menu">
             </div>
         </nav>
 
         <section class="table-section">
             <ul class="table-list" id="mesaList">
-                <li class="table-list__item first-item" id="autoService">
-                    <h2 class="table-list__item__title">Auto <br> Servicio</h2>
-                    <img class="table-list__item__icon" src="./src/assets/icon/iconos-hra-02.svg" alt="table-green">
+                <li class="table-list-item first-item" id="autoService">
+                    <h2 class="table-list-item-title">Auto <br> Servicio</h2>
+                    <img class="table-list-item-icon" src="./src/assets/icon/iconos-hra-02.svg" alt="table-green">
                 </li>
-                <li class="table-list__item" id="addTable">
-                    <h2 class="table-list__item__title">Agregar <br> mesa</h2>
-                    <img class="table-list__item__icon" src="./src/assets/icon/plus.svg" alt="plus-icon">
-                </li>
-                <li id="lastItem"></li>
             </ul>
         </section>
     </main>
@@ -59,5 +61,7 @@
     </div>
     
     <script src="./src/js/mesas-js/addTable.js"></script>
+    <script src="./src/js/log-out.js"></script>
+    <script src="./src/js/mesas-js/drop-down-menu.js"></script>
 </body>
 </html>

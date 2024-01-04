@@ -1,0 +1,83 @@
+@media screen and (max-width: 1190px){
+    .btn-secondary-list {
+        height: 4.5vh;
+        min-width: 1.7vh;
+    }
+
+    .btn-principal{
+        width: 25%;
+        height: 4.5vh;
+        font-size: 1.2rem;
+    }
+
+    .btn-principal-content{
+        width: 25%;
+        font-size: 1.5rem;
+    }
+    
+}
+
+@media screen and (max-width: 990px){
+    .burguer-menu{
+        display: block;
+        width: 2.8rem;
+        margin-right: 5vh;
+    }
+
+    .burguer-menu:hover{
+        cursor: pointer;
+    }
+
+    .btn-principal{
+        width: 40%;
+    }
+
+    .btn-principal-content{
+        width: 40%;
+    }
+
+    .btns-container-secondary{
+        display: none;
+        background-color: var(--white);
+        position: fixed;
+        top: 0;
+        right: -10%;
+        bottom: 0;
+        width: 45%;
+        z-index: 999; 
+        overflow-y: auto;
+    }
+
+    .btn-secondary-list{
+        margin: 2rem 0rem 0;
+        width: 100%;
+        border-radius: 0;
+        background: none;
+        font-size: 1.3rem;
+    }
+    
+}
+
+@media screen and (max-width: 700px){
+    .btn-principal{
+        width: 40%;
+        font-size: 1rem;
+    }
+
+    .btns-container-secondary{
+        width: 40%;
+    }
+
+    .btn-secondary-list{
+        font-size: 1.1rem;
+    }
+    
+}
+
+@media screen and (max-width: 500px){
+    .btn-principal{
+        width: 50%;
+        height: 4.4rem;
+    }
+
+}
