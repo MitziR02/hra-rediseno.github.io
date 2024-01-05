@@ -39,8 +39,8 @@
 
                 <div id="secondary-menu" class="btns-container-secondary">
                     <button id="juntar-mesas" class="btn-secondary-list">JUNTAR MESAS</button>
-                    <button class="btn-secondary-list">CAMBIAR MESA</button>
-                    <button class="btn-secondary-list">CAMBIAR MESERO</button>
+                    <button id="cambiar-mesas" class="btn-secondary-list">CAMBIAR MESA</button>
+                    <button id="cambiar-mesero" class="btn-secondary-list">CAMBIAR MESERO</button>
                 </div>
 
                 <img class="burguer-menu" id="burguer-menu" src="./src/assets/icon/MaterialSymbolsMenu.svg" alt="menu">
@@ -70,7 +70,47 @@
                     <select class="select" id="form-mesas-juntar" name="opcion2">
                     </select>
                   
-                    <button class="btn-modal" id="mesas-confirmar" type="submit">CONFIRMAR</button>
+                    <button class="btn-modal" id="juntar-confirmar" type="submit">CONFIRMAR</button>
+                  </form>
+            </dialog>
+
+            <dialog class="modales-dialog" id="modal-cambiar-mesa">
+                <h1 class="modal-title">CAMBIAR MESAS</h1>
+                <form class="form-modal" id="form-modal-cambiar">
+                    <label class="label" for="form-area-actual">ÁREA ACTUAL</label>
+                    <select class="select" id="form-area-actual" name="opcion1">
+                    </select>
+    
+                  
+                    <label class="label" for="form-mesa-actual">MESA ACTUAL</label>
+                    <select class="select" id="form-mesa-actual" name="opcion2">
+                    </select>
+                    
+                    <label class="label" for="form-nueva-area">NUEVA ÁREA</label>
+                    <select class="select" id="form-nueva-area" name="opcion3">
+                    </select>
+
+                    <label class="label" for="form-nueva-mesa">NUEVA MESA</label>
+                    <select class="select" id="form-nueva-mesa" name="opcion4">
+                    </select>
+                  
+                    <button class="btn-modal" id="cambiar-confirmar" type="submit">CONFIRMAR</button>
+                  </form>
+            </dialog>
+
+            <dialog class="modales-dialog" id="modal-cambiar-mesero">
+                <h1 class="modal-title">JUNTAR MESAS</h1>
+                <form class="form-modal" id="form-modal-mesero">
+                    <label class="label" for="form-mesa-mesero">MESA PRINCIPAL</label>
+                    <select class="select" id="form-mesa-mesero" name="opcion1">
+                    </select>
+    
+                  
+                    <label class="label" for="form-nuevo-mesero">MESA A JUNTAR</label>
+                    <select class="select" id="form-nuevo-mesero" name="opcion2">
+                    </select>
+                  
+                    <button class="btn-modal" id="mesero-confirmar" type="submit">CONFIRMAR</button>
                   </form>
             </dialog>
 
