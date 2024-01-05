@@ -97,4 +97,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Llamar mesas dinámicamente inicialmente para el área principal
     loadTables("Area Principal");
+
+    
 });

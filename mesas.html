@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./src/css/mesas.css">
     <link rel="stylesheet" href="./src/css/css-responsive/header-responsive.css">
     <link rel="stylesheet" href="./src/css/css-responsive/mesas-responsive.css">
+    <link rel="stylesheet" href="./src/css/css-modales/modales-messa.css">
 </head>
 <body>
     <header>
@@ -37,7 +38,7 @@
                 </ul>
 
                 <div id="secondary-menu" class="btns-container-secondary">
-                    <button class="btn-secondary-list">JUNTAR MESAS</button>
+                    <button id="juntar-mesas" class="btn-secondary-list">JUNTAR MESAS</button>
                     <button class="btn-secondary-list">CAMBIAR MESA</button>
                     <button class="btn-secondary-list">CAMBIAR MESERO</button>
                 </div>
@@ -54,6 +55,26 @@
                 </li>
             </ul>
         </section>
+
+        <section class="modales-section">
+
+            <dialog class="modales-dialog" id="modal-juntar-mesas">
+                <h1 class="modal-title">JUNTAR MESAS</h1>
+                <form class="form-modal" id="form-modal-juntar">
+                    <label class="label" for="form-mesa-principal">MESA PRINCIPAL</label>
+                    <select class="select" id="form-mesa-principal" name="opcion1">
+                    </select>
+    
+                  
+                    <label class="label" for="form-mesas-juntar">MESA A JUNTAR</label>
+                    <select class="select" id="form-mesas-juntar" name="opcion2">
+                    </select>
+                  
+                    <button class="btn-modal" id="mesas-confirmar" type="submit">CONFIRMAR</button>
+                  </form>
+            </dialog>
+
+        </section>
     </main>
 
     <div class="modal" id="modal-num-comensales">
@@ -63,5 +84,6 @@
     <script src="./src/js/mesas-js/addTable.js"></script>
     <script src="./src/js/log-out.js"></script>
     <script src="./src/js/mesas-js/drop-down-menu.js"></script>
+    <script src="./src/js/mesas-js/modales-table.js"></script>
 </body>
 </html>

@@ -4,7 +4,7 @@ body{
     align-items: center;
 }
 
-.openTable__box{
+.openTable-box{
     background: #EFEFEF 0% 0% no-repeat padding-box;
     box-shadow: 10px 10px 15px #00000029;
     border-radius: 20px;
@@ -18,15 +18,15 @@ body{
     align-items: center;
 }
 
-.title__box{
+.title-box{
     font-size: 1.2rem;
 }
 
-.subtitle__box{
+.subtitle-box{
     font-size: .8rem;
 }
 
-.input__box{
+.input-box{
     border: 1px solid #818A91;
     border-radius: 35px;
 

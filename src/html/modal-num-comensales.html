@@ -7,41 +7,39 @@
 
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/css-modales/modal-comensales.css">
-    <link rel="stylesheet" href="../css/keypad.css">
+    <link rel="stylesheet" href="../css/css-reutilizables/keypad.css">
 
 </head>
 <body>
     <main>
-        <section class="openTable__box">
-
-            <h3 class="title__box">ABRIR MESA</h3>
-
-            <h4 class="subtitle__box">NÚMERO DE COMENSALES</h4>
-
-            <p class="input__box"></p>
+        <section class="openTable-box">
+            <h3 class="title-box">ABRIR MESA</h3>
+            <h4 class="subtitle-box">NÚMERO DE COMENSALES</h4>
+    
+            <p class="input-box" id="comensalesInput"></p>
             
             <div class="keypad">
-                <ul class="container keypad__list">
-                    <li class="keypad__item">1</li>
-                    <li class="keypad__item">2</li>
-                    <li class="keypad__item">3</li>
-                    <li class="keypad__item">4</li>
-                    <li class="keypad__item">5</li>
-                    <li class="keypad__item">6</li>
-                    <li class="keypad__item">7</li>
-                    <li class="keypad__item">8</li>
-                    <li class="keypad__item">9</li>
-                    <li class="keypad__item">⬅</li>
-                    <li class="keypad__item">0</li>
-                    <li class="keypad__item">C</li>
+                <ul class="container keypad-items" id="keypadItems">
+                    <li class="keypad-item">1</li>
+                    <li class="keypad-item">2</li>
+                    <li class="keypad-item">3</li>
+                    <li class="keypad-item">4</li>
+                    <li class="keypad-item">5</li>
+                    <li class="keypad-item">6</li>
+                    <li class="keypad-item">7</li>
+                    <li class="keypad-item">8</li>
+                    <li class="keypad-item">9</li>
+                    <li class="keypad-item clear">⬅</li>
+                    <li class="keypad-item">0</li>
+                    <li class="keypad-item clear">C</li>
                 </ul>
             </div>
-
+    
             <button id="btnCerrarModal" class="btn">CONFIRMAR</button>
-        
-          </section>
+        </section>
+    
     </main>
 
-    <script src="../js/mesas-js/addTable.js"></script>
+    <script src="../js/mesas-js/modal-open-table.js"></script>
 </body>
 </html>
