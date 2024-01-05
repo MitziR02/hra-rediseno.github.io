@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./src/css/masaAbierta.css">
     <link rel="stylesheet" href="./src/css/css-responsive/header-responsive.css">
     <link rel="stylesheet" href="./src/css/css-responsive/mesa-abierta-responsive.css">
+    <link rel="stylesheet" href="./src/css/css-modales/modales-messa.css">
+    <link rel="stylesheet" href="./src/css/css-responsive/modales-responsive.css">
 </head>
 <body class="flex column">
 
@@ -55,13 +57,13 @@
         </nav>
     
         <section class="main-food flex">
-            <div class="main-btns-container flex column">
+            <div id="main-btns-container" class="main-btns-container flex column">
                 <ul class="side-btn-list">
-                    <li class="side-btn-item">
+                    <li class="side-btn-item" id="btn-div-cuenta">
                         <img src="./src/assets/icon/iconos-hra-10.svg" alt="dividir-icon" class="side-btn-icon">
                         <h3 class="text-side-btn">Dividir cuenta</h3>
                     </li>
-                    <li class="side-btn-item">
+                    <li class="side-btn-item" id="btn-act-comen">
                         <img src="./src/assets/icon/iconos-hra-11.svg" alt="actualizar-icon" class="side-btn-icon">
                         <h3 class="text-side-btn">Actualizar comensales</h3>
                     </li>
@@ -79,7 +81,10 @@
                     <h3 class="text-side-btn">Imprimir</h3>
                 </div>
             </div>
-    
+            <div class="container-burguer" id="container-burguer">
+                <img id="menu-icon" src="./src/assets/icon/MaterialSymbolsMenu.svg" alt="menu">
+            </div>
+            
             <div class="food-container">
                 <div class="food-header flex">
                     <h1 class="food-text">FAMILIAS</h1>
@@ -109,9 +114,41 @@
                 <hr class="hr-ticket">
             </div>
         </section>
+
+        <section class="modales-section">
+
+            <dialog class="modales-dialog" id="modal-dividir-cuenta">
+                <h1 class="modal-title">DIVIDIR CUENTA</h1>
+                <form class="form-modal" id="form-dividir-cuenta">
+
+                    <label class="label" for="form-select-cuenta">CÓMO DIVIDIR</label>
+                    <select class="select" id="form-select-cuenta" name="opcion">
+                        <option value="opcion1">POR COMENSAL</option>
+                        <option value="opcion2">GLOBAL</option>
+                    </select>
+                  
+                    <button class="btn-modal" id="dividir-confirmar" type="submit">CONFIRMAR</button>
+                  </form>
+            </dialog>
+
+            <dialog class="modales-dialog" id="modal-act-comen">
+                <h1 class="modal-title">ACTUALIZAR COMENSALES</h1>
+                <div class="form-modal">
+                    <label class="label" for="cantidad">COMENSALES</label>
+                    <div class="number-input">
+                        <button onclick="decrement()">-</button>
+                        <input class="select" type="number" id="cantidad" value="1" readonly>
+                        <button onclick="increment()">+</button>
+                    </div>
+                    <button class="btn-modal" id="comensales-confir" type="submit">CONFIRMAR</button>
+                    </div>
+            </dialog>
+        </section>
     </main>
 
     <script src="./src/js/log-out.js"></script>
     <script src="./src/js/mesa-abierta-js/mesa-abierta-nav.js"></script>
+    <script src="./src/js/mesa-abierta-js/modal-table-opened.js"></script>
+    <script src="./src/js/mesa-abierta-js/menu-hamburguesa.js"></script>
 </body>
 </html>

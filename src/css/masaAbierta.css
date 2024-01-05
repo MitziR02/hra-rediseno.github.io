@@ -104,12 +104,16 @@ main {
 
 .side-btn-item{
     text-align: center;
-    font-size: 0.6rem;
-    margin-bottom: 1.3rem;
+    font-size: .9rem;
+    margin: 0 .3rem 1rem;
 }
 
 .side-btn-icon{
     width: 1.4rem;
+}
+
+.container-burguer{
+    display: none;
 }
 
 .food-container{
