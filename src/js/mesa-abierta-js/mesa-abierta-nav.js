@@ -13,25 +13,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const btnMenu = document.getElementById('menu-icon');
     const sideMenuNav = document.getElementById('main-btns-container');
     const contBurguer = document.getElementById('container-burguer');
-    
-    window.addEventListener("resize", function () {
-        if (window.innerWidth > 700) {
-            btnInfo.style.display = "none";
-            sideMenu.style.display = "block";
-            contBurguer.style.display = "none";
-            sideMenuNav.style.display = "none";
-        } else if (window.innerWidth <= 700 && window.innerWidth > 450) {
-            btnInfo.style.display = "flex";
-            sideMenu.style.display = "none";
-            contBurguer.style.display = "none";
-            sideMenuNav.style.display = "none";
-        } else {
-            btnInfo.style.display = "flex";
-            contBurguer.style.display = "flex";
-            sideMenu.style.display = "none";
-            sideMenuNav.style.display = "none";
-        }
-    });
 
     btnInfo.addEventListener("click", () => {
         sideMenu.style.display = "block";
@@ -40,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     btnMenu.addEventListener("click", () => {
         sideMenuNav.style.display = "flex";
     });
-    
+
     document.addEventListener("click", function (event) {
         if (window.innerWidth <= 700) {
             if (!sideMenu.contains(event.target) && event.target !== btnInfo) {
@@ -53,6 +34,26 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
     });
+    
+    
+    window.addEventListener("resize", function () {
+        if (window.innerWidth > 700) {
+            btnInfo.style.display = "none";
+            sideMenu.style.display = "block";
+        } else if (window.innerWidth <= 700 && window.innerWidth > 450) {
+            btnInfo.style.display = "flex";
+            sideMenu.style.display = "none";
+            contBurguer.style.display = "none";
+            sideMenuNav.style.display = "flex";
+        } else {
+            btnInfo.style.display = "flex";
+            contBurguer.style.display = "flex";
+            sideMenu.style.display = "none";
+            sideMenuNav.style.display = "none";
+        }
+    });
+
+    
     
       
 
