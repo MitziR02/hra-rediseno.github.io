@@ -64,8 +64,24 @@ main {
     justify-content: center;
 }
 
+.info-ticket{
+    font-family: var(--font-light);
+    margin-left: .5rem;
+}
+
+#ticket-folio{
+    margin-bottom: .5rem;
+}
+
 .nav-btn-green  {
     background: #41d320;
+    font-size: .8rem;
+    text-align: center;
+}
+
+
+#info-btn{
+    display: none;
 }
 
 /*----------------------*/

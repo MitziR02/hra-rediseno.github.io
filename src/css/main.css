@@ -56,6 +56,11 @@ table {
 	src: url('../assets/font/Muli-SemiBold.ttf') format('truetype');
   } 
 
+  @font-face {
+	font-family: 'font_hra_light';
+	src: url('../assets/font/Muli.ttf') format('truetype');
+  } 
+
 :root{
     --black:#303232;
     --red: #B70114;
@@ -65,6 +70,8 @@ table {
 
     --font: 'font_hra', sans-serif;
 	--font_semi: 'font_hra_semi', sans-serif;
+	--font-light: 'font_hra_light', sans-serif;
+
 }
 
 body{

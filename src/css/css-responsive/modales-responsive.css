@@ -1,0 +1,50 @@
+@media screen and (max-width: 500px){
+    .modales-dialog{
+        padding: 1rem 3rem;
+    }
+    
+    .modal-title{
+        font-size: 1.3rem;
+        margin: 0 0 2rem;
+    }
+    
+    .select{
+        width: 15rem;
+        height: 3rem;
+    }
+    
+    .btn-modal{
+        width: 25vh;
+        height: 5vh;
+        font-size: 1.1rem;
+        margin: 1rem auto;
+    }
+}
+
+@media screen and (max-width: 380px){
+    .modales-dialog{
+        padding: 1rem 1rem;
+        text-align: center;
+    }
+    
+    .modal-title{
+        font-size: 1.2rem;
+        margin: 0 0 2rem;
+    }
+    
+    .label{
+        margin-bottom: .5rem;
+    }
+    .select{
+        width: 12rem;
+        height: 3rem;
+        margin: 1rem auto;
+    }
+    
+    .btn-modal{
+        width: 25vh;
+        height: 5vh;
+        font-size: 1.1rem;
+        margin: 1rem auto;
+    }
+}

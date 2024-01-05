@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./src/css/main.css">
     <link rel="stylesheet" href="./src/css/css-reutilizables/header.css">
     <link rel="stylesheet" href="./src/css/masaAbierta.css">
+    <link rel="stylesheet" href="./src/css/css-responsive/header-responsive.css">
+    <link rel="stylesheet" href="./src/css/css-responsive/mesa-abierta-responsive.css">
 </head>
 <body class="flex column">
 
@@ -22,7 +24,7 @@
 
     <main class="flex column">
         <nav class="table-opened-nav flex">
-            <div class="nav-btn flex column">
+            <div class="nav-btn flex column" id="back-btn">
                 <img src="./src/assets/icon/iconos-hra-06.svg" alt="back-icon" class="icon-btn">
                 <h2 class="btn-title color-white">MESAS</h2>
             </div>
@@ -32,15 +34,21 @@
                 <h2 class="comanda-text ">MESA 2</h2>
             </div>
 
-            <ul class="folio-container color-white flex column">
-                <li class="info-ticket" id="ticket-folio">Text Sample</li>
-                <li class="info-ticket" id="ticket-time">Text Sample</li>
-                <li class="info-ticket" id="ticket-waiter">Text Sample</li>
-                <li class="info-ticket" id="ticket-table">Text Sample</li>
-                <li class="info-ticket" id="ticket-clients">Text Sample</li>
-            </ul>
-    
-            <div class="nav-btn nav-btn-green flex column">
+            <div class="folio-container color-white flex column">
+                <ul id="folio-list" class="folio-container-list color-white flex column">
+                    <li class="info-ticket" id="ticket-folio">FOLIO TICKET: 007230</li>
+                    <li class="info-ticket" id="ticket-time">Hora: 15:54:44</li>
+                    <li class="info-ticket" id="ticket-waiter">Mesero: Ruben Ramirez</li>
+                    <li class="info-ticket" id="ticket-table">Mesa: 2</li>
+                    <li class="info-ticket" id="ticket-clients">Comensales: 4</li>
+                </ul>
+                
+                <div class="flex" id="info-btn">
+                    <img class="info-icon" src="./src/assets/icon/SolarInfoSquareBroken.svg" alt="info-icon">
+                    <h2 class="btn-title-info color-white">INFORMACIÓN DE MESA</h2>
+                </div>
+            </div>
+            <div class="nav-btn nav-btn-green color-white flex column">
                 <img src="./src/assets/icon/iconos-hra-07.svg" alt="send-icon" class="icon-btn">
                 <h2 class="btn-title">ENVIAR COMANDA</h2>
             </div>
@@ -104,5 +112,6 @@
     </main>
 
     <script src="./src/js/log-out.js"></script>
+    <script src="./src/js/mesa-abierta-js/mesa-abierta-nav.js"></script>
 </body>
 </html>
