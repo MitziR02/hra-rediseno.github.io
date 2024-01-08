@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function loadTables(area) {
         var numeroDeMesas = mesasPorArea[area];
 
-        // Ocultar mesas antes de mostrar area seleccionada
+        // Ocultar mesas antes de mostrar el área seleccionada
         hideAllTables();
 
         for (var i = 1; i <= numeroDeMesas; i++) {
@@ -51,66 +51,36 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // Mostrar modal -------------------------POR CORREGIR
-    function showModal() {
-        modalComensales.style.display = "block";
+    // Event listener para el cambio en el select
+    var menuArea = document.getElementById("menu-area");
 
-        var myIframe = document.getElementById('frame-open-table');
-        var doc = myIframe.contentDocument || myIframe.contentWindow.document;
-
-        var confirmar = doc.getElementById("btnCerrarModal");
-
-        confirmar.addEventListener("click", function () {
-            hideModal();
-        });
-    }
-
-    function hideModal() {
-        console.log("btn oprimido");
-        modalComensales.style.display = "none";
-
-        window.location.href = 'mesa-abierta.html';
-    }
-
-    // Event listener para los botones del menú principal
-    var areaPrincipalBtn = document.getElementById("areaPrincipalBtn");
-    var terrazaBtn = document.getElementById("terrazaBtn");
-    var salonBtn = document.getElementById("salonBtn");
-    var barraBtn = document.getElementById("barraBtn");
-
-    areaPrincipalBtn.addEventListener("click", function () {
-        loadTables("Principal");
-    });
-
-    terrazaBtn.addEventListener("click", function () {
-        loadTables("Terraza");
-    });
-
-    salonBtn.addEventListener("click", function () {
-        loadTables("Salón");
-    });
-
-    barraBtn.addEventListener("click", function () {
-        loadTables("Barra");
+    menuArea.addEventListener("change", function () {
+        var area = this.value; // Obtener el valor seleccionado del select
+        loadTables(area);
     });
 
     // Llamar mesas dinámicamente inicialmente para el área principal
     loadTables("Principal");
-
-    
 });
 
 
-//Event listener para dispositivos moviles
+// Mostrar modal -------------------------POR CORREGIR
+function showModal() {
+    modalComensales.style.display = "block";
 
-function addTouchEvent(element, area) {
-    element.addEventListener("touchstart", function (event) {
-        event.preventDefault(); // Evitar el comportamiento predeterminado del evento táctil
-        loadTables(area);
+    var myIframe = document.getElementById('frame-open-table');
+    var doc = myIframe.contentDocument || myIframe.contentWindow.document;
+
+    var confirmar = doc.getElementById("btnCerrarModal");
+
+    confirmar.addEventListener("click", function () {
+        hideModal();
     });
 }
 
-addTouchEvent(areaPrincipalBtn, "Principal");
-addTouchEvent(terrazaBtn, "Terraza");
-addTouchEvent(salonBtn, "Salón");
-addTouchEvent(barraBtn, "Barra");
+function hideModal() {
+    console.log("btn oprimido");
+    modalComensales.style.display = "none";
+
+    window.location.href = 'mesa-abierta.html';
+}
