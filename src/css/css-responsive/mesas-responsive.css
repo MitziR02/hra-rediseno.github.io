@@ -80,12 +80,11 @@
 
     .btns-container-secondary{
         width: 50%;
-        height: 4.4rem;
     }
 
 }
 
-@media screen and (max-width: 430px){
+@media screen and (max-width: 450px){
 
     .title-container{
         margin: 1rem 0 1rem;

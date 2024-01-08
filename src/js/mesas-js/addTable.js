@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var modalComensales = document.getElementById("modal-num-comensales");
 
     var mesasPorArea = {
-        "Area Principal": 8,
+        Principal: 8,
         Terraza: 5,
         Salón: 7,
         Barra: 3
@@ -31,8 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 newTable.classList.add("table-list-item");
                 newTable.id = mesaId;
                 newTable.style.display = "flex"; // Mostrar la nueva mesa
-                newTable.innerHTML = '<h2 class="table-list-item-title">Mesa ' + i + ' - ' + area + '</h2>' +
-                    '<img class="table-list-item-icon" src="./src/assets/icon/iconos-hra-01.svg" alt="table-icon">';
+                newTable.innerHTML = '<h2 class="table-list-item-title">Mesa ' + i + ' - ' + area + '</h2>' + '<img class="table-list-item-icon" src="./src/assets/icon/iconos-hra-01.svg" alt="table-icon">';
 
                 tableList.insertBefore(newTable, lastItem);
 
@@ -80,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var barraBtn = document.getElementById("barraBtn");
 
     areaPrincipalBtn.addEventListener("click", function () {
-        loadTables("Area Principal");
+        loadTables("Principal");
     });
 
     terrazaBtn.addEventListener("click", function () {
@@ -96,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Llamar mesas dinámicamente inicialmente para el área principal
-    loadTables("Area Principal");
+    loadTables("Principal");
 
     
 });
