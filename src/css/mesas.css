@@ -23,6 +23,10 @@ main {
     border-radius: 20px;
 }
 
+.title-container{
+    display: flex;
+}
+
 .font-title {
     font-size: 1.5rem;
     margin: 2vh 5vh 1rem;
@@ -31,55 +35,16 @@ main {
 .btns-container {
     display: flex;
     justify-content: space-between;
-    position: relative;
-}
-
-#dropdownMenu {
-    display: none;
-
-    list-style: none;
-}
-
-.btn-principal {
-    width: 33%;
-    height: 6.5vh;
-    background: none;
-    border: 1px solid #303232;
-    border-radius: 35px;
-    font-family: var(--font);
-    font-size: 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-left: 5vh;
 }
 
 .btn-principal-content{
-    position: absolute;
-    top: 100%;
-    left: 5vh;
-    display: none;
-    background-color: var(--white);
+    background: none;
     width: 33%;
     border-radius: 35px;
+    border: 1px solid #303232;
+    font-family: var(--font);
     font-size: 1.5rem;
-}
-
-.btn-dropdown{
-    margin: 1rem 3rem 1rem;
-}
-
-.btn-dropdown a{
-    text-decoration: none;
-    color: var(--black);
-}
-
-.btns-container:hover .btn-principal-content {
-    display: block;
-  }
-
-.icon-drop{
-    width: 2rem;
+    margin-left: 5vh;
 }
 
 .btns-container-secondary{

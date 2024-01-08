@@ -4,12 +4,6 @@
         min-width: 1.7vh;
     }
 
-    .btn-principal{
-        width: 25%;
-        height: 4.5vh;
-        font-size: 1.2rem;
-    }
-
     .btn-principal-content{
         width: 25%;
         font-size: 1.5rem;
@@ -26,10 +20,6 @@
 
     .burguer-menu:hover{
         cursor: pointer;
-    }
-
-    .btn-principal{
-        width: 40%;
     }
 
     .btn-principal-content{
@@ -59,10 +49,6 @@
 }
 
 @media screen and (max-width: 700px){
-    .btn-principal{
-        width: 40%;
-        font-size: 1rem;
-    }
 
     .btns-container-secondary{
         width: 40%;
@@ -75,7 +61,7 @@
 }
 
 @media screen and (max-width: 500px){
-    .btn-principal{
+    .btns-container-secondary{
         width: 50%;
         height: 4.4rem;
     }

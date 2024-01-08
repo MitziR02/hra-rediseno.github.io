@@ -30,6 +30,6 @@ header{
     width: 4.4vh;
 }
 
-.icon:hover{
+.log-out-container:hover{
     cursor: pointer;
 }

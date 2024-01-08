@@ -24,6 +24,9 @@ document.querySelectorAll('.keypad-item').forEach(item => {
             setTimeout(() => {
                 if (pin === correctPin) {
                     pin = '';
+                    document.querySelectorAll('.output-item').forEach(item => {
+                        item.innerText = '';
+                    });
                     window.location.href = "./mesas.html";
                 } else {
                     showModalPIN();
@@ -41,6 +44,10 @@ document.querySelectorAll('.keypad-item').forEach(item => {
 function enterButtonClick() {
     event.preventDefault();
     if (pin === correctPin) {
+        pin = '';
+        document.querySelectorAll('.output-item').forEach(item => {
+            item.innerText = '';
+        });
         window.location.href = "./mesas.html";
     } else {
         pin = '';

@@ -8,6 +8,11 @@ body {
     font-size: 1.5rem;
 }
 
+#pinForm{
+    display: flex;
+    justify-content: center;
+}
+
 .logo {
     width: 44.5vh;
 }

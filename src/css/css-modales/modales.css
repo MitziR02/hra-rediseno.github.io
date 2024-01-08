@@ -43,3 +43,7 @@
     font-size: 1.1rem;
     margin: 1rem auto;
 }
+
+.btn-modal:hover{
+    cursor: pointer;
+}

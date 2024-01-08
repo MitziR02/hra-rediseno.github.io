@@ -3,9 +3,17 @@
         width: 30vh;
     }
 
+    main{
+        height: 70%;
+    }
+
+    #pinForm{
+        height: 100%;
+    }
+
     .pin-input-box {
-        width: 30vh;
-        height: 45vh;
+        width: 90%;
+        height: 100%;
     }
 
     .title{
@@ -17,8 +25,8 @@
     }
 
     .output-item{
-        width: 5vh;
-        height: 5vh;
+        width: 7vh;
+        height: 7vh;
     }
 
     .keypad-items{
@@ -26,12 +34,11 @@
     }
 
     .keypad-item{
-        height: 5vh;
-        width: 5vh;
+        height: 7vh;
+        width: 7vh;
     }
 
     .btn{
-        width: 22vh;
-        height: 4vh;
+        width: 80%;
     }
 }

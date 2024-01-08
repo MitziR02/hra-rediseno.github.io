@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // Mostrar modal
+    // Mostrar modal -------------------------POR CORREGIR
     function showModal() {
         modalComensales.style.display = "block";
 

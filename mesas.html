@@ -17,26 +17,26 @@
     <header>
         <img class="logo" src="./src/assets/img/loho-hra soft-blanco.webp" alt="logo-hra">
 
-        <div class="log-out-container">
+        <div class="log-out-container" id="log-out-btn">
             <h3 class="font font-color">Cerrar sesión</h3>
-            <img class="icon" id="log-out-btn" src="./src/assets/icon/iconos-hra-08.svg" alt="salir">
+            <img class="icon"  src="./src/assets/icon/iconos-hra-08.svg" alt="salir">
         </div>
     </header>
 
     <main>
         <nav class="menu">
-            <h1 class="font-title font-color">MESAS</h1>
-            <h1 class="font-title" id="username-heading"></h1>
-            
+            <div class="title-container">
+                <h1 class="font-title font-color">MESAS</h1>
+                <h1 class="font-title" id="username-heading">Mesero: Juan Perez</h1>
+            </div>
 
             <div class="btns-container">
-                <button class="btn btn-principal" id="toggleBtn">ÁREA PRINCIPAL<img class="icon-drop" src="./src/assets/icon/RiArrowDownSLine.svg" alt="icon-menu"></button>
-                <ul class="btn-principal-content" id="dropdownMenu">
-                    <li class="btn-dropdown" id="areaPrincipalBtn">ÁREA PRINCIPAL<hr></li>
-                    <li class="btn-dropdown" id="terrazaBtn">TERRAZA<hr></li>
-                    <li class="btn-dropdown" id="salonBtn">SALÓN<hr></li>
-                    <li class="btn-dropdown" id="barraBtn">BARRA</li>
-                </ul>
+                <select class="btn-principal-content" name="" id="">
+                    <option value="" id="areaPrincipalBtn">ÁREA PRINCIPAL</option>
+                    <option value="" id="terrazaBtn">TERRAZA</option>
+                    <option value="" id="salonBtn">SALÓN</option>
+                    <option value="" id="barraBtn">BARRA</option>
+                </select>
 
                 <div id="secondary-menu" class="btns-container-secondary">
                     <button id="juntar-mesas" class="btn-secondary-list">JUNTAR MESAS</button>
