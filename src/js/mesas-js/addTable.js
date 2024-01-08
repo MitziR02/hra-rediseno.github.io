@@ -99,3 +99,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
     
 });
+
+
+//Event listener para dispositivos moviles
+
+function addTouchEvent(element, area) {
+    element.addEventListener("touchstart", function (event) {
+        event.preventDefault(); // Evitar el comportamiento predeterminado del evento táctil
+        loadTables(area);
+    });
+}
+
+addTouchEvent(areaPrincipalBtn, "Principal");
+addTouchEvent(terrazaBtn, "Terraza");
+addTouchEvent(salonBtn, "Salón");
+addTouchEvent(barraBtn, "Barra");
