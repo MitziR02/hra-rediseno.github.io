@@ -24,6 +24,10 @@
     margin-bottom: 1rem;
 }
 
+.select:hover{
+    cursor: pointer;
+}
+
 .select{
     width: 18rem;
     height: 4rem;

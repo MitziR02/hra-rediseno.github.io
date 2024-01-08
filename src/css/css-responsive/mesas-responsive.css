@@ -60,10 +60,54 @@
     
 }
 
+@media screen and (max-width: 650px){
+
+    .btn-principal-content{
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 550px){
+
+    .font-title{
+        font-size: 1.1rem;
+    }
+
+}
+
 @media screen and (max-width: 500px){
+
     .btns-container-secondary{
         width: 50%;
         height: 4.4rem;
+    }
+
+}
+
+@media screen and (max-width: 430px){
+
+    .title-container{
+        margin: 1rem 0 1rem;
+        justify-content: center;
+    }
+
+    .font-title{
+        margin: 0 .5rem 0;
+    }
+
+    .btns-container{
+        justify-content: space-evenly;
+    }
+
+    .btn-principal-content{
+        margin: 0;
+        width: 65%;
+    }
+
+    .burguer-menu{
+        margin: 0;
+        width: 20%\;
     }
 
 }

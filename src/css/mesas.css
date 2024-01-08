@@ -25,6 +25,7 @@ main {
 
 .title-container{
     display: flex;
+    justify-content: space-between;
 }
 
 .font-title {
@@ -47,6 +48,10 @@ main {
     margin-left: 5vh;
 }
 
+.btn-principal-content:hover{
+    cursor: pointer;
+}
+
 .btns-container-secondary{
     margin-right: 5vh;
 }
@@ -60,6 +65,10 @@ main {
     border: none;
     font-family: var(--font);
     font-size: 1rem;
+}
+
+.btn-secondary-list:hover{
+    cursor: pointer;
 }
 
 .burguer-menu{
@@ -91,6 +100,10 @@ main {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.table-list-item:hover{
+    cursor: pointer;
 }
 
 .table-list-item-icon {
