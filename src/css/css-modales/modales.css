@@ -5,6 +5,10 @@
     padding: 2rem 5rem;
 }
 
+.modales-dialog::backdrop{
+    background-color: #303232E6;
+}
+
 .modal-title{
     font-size: 1.7rem;
     margin: 0 0 2.5rem;

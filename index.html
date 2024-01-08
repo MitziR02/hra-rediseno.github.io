@@ -4,12 +4,13 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HRA-PIN</title>
+    <title>Meseros | HRA Soft</title>
 
     <link rel="stylesheet" href="./src/css/main.css">
     <link rel="stylesheet" href="./src/css/index.css">
     <link rel="stylesheet" href="./src/css/css-reutilizables/keypad.css">
     <link rel="stylesheet" href="./src/css/css-responsive/index-responsive.css">
+    <link rel="stylesheet" href="./src/css/css-modales/modales.css">
     
 </head>
 
@@ -53,6 +54,15 @@
             <button type="submit" class="btn">ENTRAR</button>
           </section>
         </form>
+
+        <div class="modals-container">
+
+          <dialog class="modales-dialog" id="modal-wrong-pin">
+            <h1 class="modal-title">PIN Incorrecto</h1>
+            <button class="btn-modal" id="aceptar-wrong-pin">ACEPTAR</button>
+          </dialog>
+
+        </div>
       </main>
       
     <script src="./src/js/pin.js"></script>

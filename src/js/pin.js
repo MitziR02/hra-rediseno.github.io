@@ -26,7 +26,7 @@ document.querySelectorAll('.keypad-item').forEach(item => {
                     pin = '';
                     window.location.href = "./mesas.html";
                 } else {
-                    alert("PIN incorrecto. Inténtalo de nuevo.");
+                    showModalPIN();
                     pin = '';
                     document.querySelectorAll('.output-item').forEach(item => {
                         item.innerText = '';
@@ -39,11 +39,12 @@ document.querySelectorAll('.keypad-item').forEach(item => {
 
 // Validar con btn
 function enterButtonClick() {
+    event.preventDefault();
     if (pin === correctPin) {
         window.location.href = "./mesas.html";
     } else {
         pin = '';
-        alert("PIN incorrecto. Inténtalo de nuevo.");
+        showModalPIN();
         document.querySelectorAll('.output-item').forEach(item => {
             item.innerText = '';
         });
@@ -52,3 +53,17 @@ function enterButtonClick() {
 
 var enterButton = document.querySelector(".btn");
 enterButton.addEventListener("click", enterButtonClick);
+
+// Modales
+
+function showModalPIN(){
+    const modalWrongPIN = document.getElementById('modal-wrong-pin');
+    const btnAceptar = document.getElementById('aceptar-wrong-pin');
+
+    modalWrongPIN.showModal();
+
+    btnAceptar.addEventListener("click", ()=>{
+        event.preventDefault();
+        modalWrongPIN.close();
+    });
+}
