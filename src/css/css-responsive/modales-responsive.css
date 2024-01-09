@@ -26,6 +26,12 @@
         padding: 1rem 1rem;
         text-align: center;
     }
+    .bnt-close-modal{
+        width: 1.7rem;
+        top: 8px;
+        left: 8px;
+    }
+    
     
     .modal-title{
         font-size: 1.2rem;

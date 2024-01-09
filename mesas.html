@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./src/css/css-responsive/mesas-responsive.css">
     <link rel="stylesheet" href="./src/css/css-modales/modales.css">
     <link rel="stylesheet" href="./src/css/css-responsive/modales-responsive.css">
+    <link rel="stylesheet" href="./src/css/css-modales/modal-comensales.css">
 </head>
 <body>
     <header>
@@ -118,16 +119,38 @@
                   </form>
             </dialog>
 
+            <dialog class="modales-dialog" id="modal-open-table">
+                <img id="close-modal-open" class="bnt-close-modal" src="./src/assets/icon/PhXCircle.svg" alt="close">
+                <h1 class="modal-title">ABRIR MESA</h1>
+                <div class="container-keypad">
+                    <p class="input-box" id="comensalesInput"></p>
+                    <div class="keypad">
+                        <ul class="keypad-items" id="keypadItems">
+                            <li class="keypad-item">1</li>
+                            <li class="keypad-item">2</li>
+                            <li class="keypad-item">3</li>
+                            <li class="keypad-item">4</li>
+                            <li class="keypad-item">5</li>
+                            <li class="keypad-item">6</li>
+                            <li class="keypad-item">7</li>
+                            <li class="keypad-item">8</li>
+                            <li class="keypad-item">9</li>
+                            <li class="keypad-item clear">⬅</li>
+                            <li class="keypad-item">0</li>
+                            <li class="keypad-item clear">C</li>
+                        </ul>
+                    </div>
+                    <button id="btn-submit-open-table" type="submit" class="btn-modal">CONFIRMAR</button>
+                </div>
+            </dialog>
+
         </section>
     </main>
-
-    <div class="modal" id="modal-num-comensales">
-        <iframe class="modal-content" id="frame-open-table" src="./src/html/modal-num-comensales.html" frameborder="0"></iframe>
-    </div>
     
     <script src="./src/js/mesas-js/addTable.js"></script>
     <script src="./src/js/log-out.js"></script>
     <script src="./src/js/mesas-js/drop-down-menu.js"></script>
     <script src="./src/js/mesas-js/modales-table.js"></script>
+    <script src="./src/js/mesas-js/modal-open-table.js"></script>
 </body>
 </html>

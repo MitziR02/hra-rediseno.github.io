@@ -53,4 +53,19 @@ document.addEventListener("DOMContentLoaded", function () {
     btnCloseMesero.addEventListener("click", ()=>{
         modalCambiarMesero.close();
     });
+
+    const btnCloseOpenTable = document.getElementById ('close-modal-open');
+    const modalOpenTble = document.getElementById('modal-open-table');
+    const btnSubmitComensales = document.getElementById('btn-submit-open-table');
+
+    btnSubmitComensales.addEventListener("click", ()=>{
+        event.preventDefault();
+        modalOpenTble.close();
+        window.location.href = 'mesa-abierta.html';
+    });
+
+    btnCloseOpenTable.addEventListener("click", ()=>{
+        modalOpenTble.close();
+    });
+
 });

@@ -1,4 +1,3 @@
-
 var comensalesInput = document.getElementById("comensalesInput");
 var keypadItems = document.getElementById("keypadItems");
 

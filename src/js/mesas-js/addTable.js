@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     var tableList = document.getElementById("mesaList");
     var lastItem = document.getElementById("lastItem");
-    var modalComensales = document.getElementById("modal-num-comensales");
+    var modalComensales = document.getElementById("modal-open-table");
 
     var mesasPorArea = {
         Principal: 8,
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (existingTable) {
                 existingTable.style.display = "flex"; // Mostrar la mesa
                 existingTable.addEventListener("click", function () {
-                    showModal();
+                    modalComensales.showModal();
                 });
             } else {
                 var newTable = document.createElement("li");
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 tableList.insertBefore(newTable, lastItem);
 
                 newTable.addEventListener("click", function () {
-                    showModal();
+                    modalComensales.showModal();
                 });
             }
         }
@@ -61,26 +61,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Llamar mesas dinámicamente inicialmente para el área principal
     loadTables("Principal");
+    
 });
-
-
-// Mostrar modal -------------------------POR CORREGIR
-function showModal() {
-    modalComensales.style.display = "block";
-
-    var myIframe = document.getElementById('frame-open-table');
-    var doc = myIframe.contentDocument || myIframe.contentWindow.document;
-
-    var confirmar = doc.getElementById("btnCerrarModal");
-
-    confirmar.addEventListener("click", function () {
-        hideModal();
-    });
-}
-
-function hideModal() {
-    console.log("btn oprimido");
-    modalComensales.style.display = "none";
-
-    window.location.href = 'mesa-abierta.html';
-}

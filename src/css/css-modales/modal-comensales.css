@@ -1,36 +1,84 @@
-body{
+#modal-open-table{
+    width: 28vh;
+}
+
+.container-keypad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input-box{
+    border: 1px solid #818A91;
+    border-radius: 35px;
+
+    width: 20rem;
+    height: 3rem;
+
+    margin-bottom: 1rem;
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.openTable-box{
-    background: #EFEFEF 0% 0% no-repeat padding-box;
-    box-shadow: 10px 10px 15px #00000029;
-    border-radius: 20px;
-
-    width: 45.7vh;
-    height: 62.5vh;
-
+.keypad{
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
+}
+
+.keypad-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.keypad-item{
+    border: 2px solid #b7bdc2;
+    border-radius: 50%;
+    height: 6.1vh;
+    width: 6.1vh;
+    margin: 0 .2rem .5rem;
+    display: flex;
     align-items: center;
+    justify-content: center;
 }
 
-.title-box{
-    font-size: 1.2rem;
+.keypad-item:hover{
+    cursor: pointer;
+    background-color: #b7bdc2;
 }
 
-.subtitle-box{
-    font-size: .8rem;
+@media screen and (max-width: 550px){
+    #modal-open-table{
+        width: 25vh;
+    }
+
+    .input-box{
+        width: 15rem;
+        height: 3rem;
+    }
+
+    .keypad-item{
+        height: 5.5vh;
+        width: 5.5vh;
+    }
+
+    #btn-submit-open-table{
+        width: 20vh;
+        height: 5vh;
+    }
 }
 
-.input-box{
-    border: 1px solid #818A91;
-    border-radius: 35px;
+@media screen and (max-width: 381px){
 
-    width: 80%;
-    height: 8%;
+    .keypad-item{
+        height: 5.3vh;
+        width: 5.3vh;
+    }
 }
+@media screen and (max-width: 335px){
 
+    #modal-open-table{
+        width: 23vh;
+    }
+}
