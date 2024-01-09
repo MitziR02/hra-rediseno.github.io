@@ -9,6 +9,14 @@
     background-color: #303232E6;
 }
 
+.bnt-close-modal{
+    width: 2.5rem;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    cursor: pointer;
+}
+
 .modal-title{
     font-size: 1.7rem;
     margin: 0 0 2.5rem;
